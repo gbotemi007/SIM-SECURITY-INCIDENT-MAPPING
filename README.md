@@ -14,7 +14,7 @@ SIM is a web-based platform concept that lets students, villa-mates, staff, and 
 | Deliverable | Location | Description |
 |---|---|---|
 | a. Stakeholder Questionnaire | [`questionnaire/SIM_Questionnaire_Design.md`]( https://forms.gle/5hgiGiuKNnzA7NFs9) | Question design for students, staff, and landlords, ready to transfer into Google Forms. **Google Form link: `<paste your live form link here>`** |
-| b. Ishikawa (Fishbone) Analysis | [`ishikawa/SIM_Ishikawa.drawio`](ishikawa/SIM_Ishikawa.drawio) | Root-cause analysis of why campus security incidents go unreported/unresolved. Open in [draw.io](https://app.diagrams.net). |
+| b. Ishikawa (Fishbone) Analysis | [`ishikawa/SIM_Ishikawa.drawio`](ishikawa/SIM_Ishikawa.png) | Root-cause analysis of why campus security incidents go unreported/unresolved. Open in [draw.io](https://app.diagrams.net). |
 | c. Mini Web Interface | [`webapp/`](webapp/) | A client-side prototype: incident report form + live report feed with basic stats. Open `webapp/index.html` in a browser, or enable GitHub Pages (see `docs/GITHUB_SETUP_GUIDE.md`). |
 | d. Use-Case Diagram | [`usecase/SIM_UseCase_Diagram.svg`](usecase/SIM_UseCase_Diagram.svg) | Shows how Students/Villa-mates, Staff, Landlords, and Security Admin interact with the system. |
 | e. SRS Document | [`srs/SIM_SRS.docx`](srs/SIM_SRS.docx) | Full Software Requirements Specification, including functional and non-functional requirements. |
