@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>SIM — Security Incident Mapping</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand">
+    <span class="brand-mark">SIM</span>
+    <span class="brand-sub">Security Incident Mapping</span>
+  </div>
+  <div class="topbar-tag">Report. Track. Stay safe.</div>
+</header>
+
+<main class="layout">
+
+  <!-- LEFT: REPORT FORM -->
+  <section class="panel report-panel">
+    <h1>Report a security incident</h1>
+    <p class="lede">Your report helps campus security and your community respond faster. Anonymous reporting is available.</p>
+
+    <form id="reportForm" novalidate>
+      <label class="field">
+        <span>I am reporting as</span>
+        <select id="reporterType" required>
+          <option value="" disabled selected>Select role</option>
+          <option>Student / Villa-mate</option>
+          <option>Staff</option>
+          <option>Landlord / Property Manager</option>
+        </select>
+      </label>
+
+      <label class="field">
+        <span>Incident type</span>
+        <select id="incidentType" required>
+          <option value="" disabled selected>Select incident type</option>
+          <option data-severity="high">Stabbing / Assault</option>
+          <option data-severity="critical">Rape / Sexual assault</option>
+          <option data-severity="critical">Murder</option>
+          <option data-severity="medium">Theft / Stealing</option>
+          <option data-severity="medium">Burglary / Break-in</option>
+          <option data-severity="high">Cultism-related violence</option>
+          <option data-severity="low">Other</option>
+        </select>
+      </label>
+
+      <label class="field">
+        <span>Location</span>
+        <input id="location" type="text" placeholder="e.g. Behind Faculty of Science, Hostel B" required />
+      </label>
+
+      <label class="field">
+        <span>Description</span>
+        <textarea id="description" rows="4" placeholder="What happened? When? Any details that could help security respond." required></textarea>
+      </label>
+
+      <label class="checkbox-field">
+        <input id="anonymous" type="checkbox" />
+        <span>Report anonymously (your identity will not be recorded)</span>
+      </label>
+
+      <div id="reporterIdBlock" class="field">
+        <span>Your name / matric no. (optional, hidden if anonymous)</span>
+        <input id="reporterId" type="text" placeholder="Optional contact info" />
+      </div>
+
+      <button type="submit" class="btn-submit">Submit report</button>
+      <p id="formMsg" class="form-msg" role="status"></p>
+    </form>
+  </section>
+
+  <!-- RIGHT: FEED + STATS -->
+  <section class="panel feed-panel">
+    <div class="stats-row" id="statsRow">
+      <div class="stat"><span class="stat-num" id="statTotal">0</span><span class="stat-label">Total reports</span></div>
+      <div class="stat"><span class="stat-num" id="statCritical">0</span><span class="stat-label">Critical</span></div>
+      <div class="stat"><span class="stat-num" id="statPending">0</span><span class="stat-label">Pending review</span></div>
+    </div>
+
+    <div class="feed-header">
+      <h2>Recent reports</h2>
+      <select id="filterType">
+        <option value="all">All categories</option>
+        <option>Stabbing / Assault</option>
+        <option>Rape / Sexual assault</option>
+        <option>Murder</option>
+        <option>Theft / Stealing</option>
+        <option>Burglary / Break-in</option>
+        <option>Cultism-related violence</option>
+        <option>Other</option>
+      </select>
+    </div>
+
+    <ul id="feedList" class="feed-list">
+      <!-- reports injected here -->
+    </ul>
+    <p id="emptyState" class="empty-state">No reports yet. Reports submitted on this device will appear here.</p>
+  </section>
+
+</main>
+
+<footer class="footer">
+  SEN202 Weekly Dev — SIM Prototype · Client-side demo only (no server/database attached) · Data resets on page reload
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
