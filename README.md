@@ -3,10 +3,9 @@
 **SEN202 Weekly Dev — Weekend 1 (01/07/26)**
 
 SIM is a web-based platform concept that lets students, villa-mates, staff, and landlords quickly report campus/community security incidents (stabbing, rape, theft/stealing, murder, and more) — anonymously if needed — so that campus security can respond faster and reduce the community-crime contribution to Nigeria's broader insecurity problem.
+|
 
-a. Stakeholder Questionnaire | [`questionnaire/SIM_Questionnaire_Design.md`](questionnaire/SIM_Questionnaire_Design.md) | Question design for students, staff, and landlords. |
-
-**Google Form for the questionaire:** https://forms.gle/5hgiGiuKNnzA7NFs9
+**Google Form for the stakeholders questionaire:** https://forms.gle/5hgiGiuKNnzA7NFs9
 
 **Live responses (view submitted answers):** https://docs.google.com/spreadsheets/d/1nsWsuvgtWOG53XFPd7z6jZa7eqPbajy4wDyvr3-tRvY/edit?resourcekey=&gid=1309599286#gid=1309599286
 
@@ -14,7 +13,7 @@ a. Stakeholder Questionnaire | [`questionnaire/SIM_Questionnaire_Design.md`](que
 
 | Deliverable | Location | Description |
 |---|---|---|
-| a. Stakeholder Questionnaire | [`questionnaire/SIM_Questionnaire_Design.md`](questionnaire/SIM_Questionnaire_Design.md) | Question design for students, staff, and landlords, ready to transfer into Google Forms. **Google Form link: `<paste your live form link here>`** |
+| a. Stakeholder Questionnaire | [`questionnaire/SIM_Questionnaire_Design.md`]( https://forms.gle/5hgiGiuKNnzA7NFs9) | Question design for students, staff, and landlords, ready to transfer into Google Forms. **Google Form link: `<paste your live form link here>`** |
 | b. Ishikawa (Fishbone) Analysis | [`ishikawa/SIM_Ishikawa.drawio`](ishikawa/SIM_Ishikawa.drawio) | Root-cause analysis of why campus security incidents go unreported/unresolved. Open in [draw.io](https://app.diagrams.net). |
 | c. Mini Web Interface | [`webapp/`](webapp/) | A client-side prototype: incident report form + live report feed with basic stats. Open `webapp/index.html` in a browser, or enable GitHub Pages (see `docs/GITHUB_SETUP_GUIDE.md`). |
 | d. Use-Case Diagram | [`usecase/SIM_UseCase_Diagram.svg`](usecase/SIM_UseCase_Diagram.svg) | Shows how Students/Villa-mates, Staff, Landlords, and Security Admin interact with the system. |
